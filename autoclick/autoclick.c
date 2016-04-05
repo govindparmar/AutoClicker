@@ -48,8 +48,8 @@ __forceinline VOID CreateWindows(HINSTANCE hInstance)
 	hEditMS = CreateWindowEx(WS_EX_OVERLAPPEDWINDOW, _T("Edit"), _T("50"), WS_VISIBLE | WS_CHILD | ES_NUMBER | ES_MULTILINE | WS_DISABLED, 300, 30, 50, 20, hWnd, NULL, hInstance, NULL);
 	hStart = CreateWindow(_T("Button"), _T("Start"), WS_VISIBLE | WS_CHILD | BS_LEFTTEXT, 10, 60, 170, 30, hWnd, NULL, hInstance, NULL);
 	hStop = CreateWindow(_T("Button"), _T("Stop"), WS_VISIBLE | WS_CHILD | BS_LEFTTEXT | WS_DISABLED, 180, 60, 170, 30, hWnd, NULL, hInstance, NULL);
-	hDonateLnk = CreateWindowEx(0, _T("SysLink"), _T("This program is 100% free.\r\nIf you want to donate to me via PayPal, please <A HREF=\"https://www.paypal.com/cgi-bin/webscr/?cmd=_s-xclick&hosted_button_id=X8EGYQNZ7VBPJ\">follow this link</A>."), WS_VISIBLE | WS_CHILD, 10, 110, 360, 40, hWnd, (HMENU)IDC_SYSLINK, hInstance, NULL);
-
+	hDonateLnk = CreateWindowEx(0, _T("SysLink"), _T("This program is 100% free.\r\nIf you want to donate to me via PayPal, please <A HREF=\"https://www.paypal.me/govind\">follow this link</A>."), WS_VISIBLE | WS_CHILD, 10, 110, 360, 40, hWnd, (HMENU)IDC_SYSLINK, hInstance, NULL);
+	// Old link: <A HREF=\"https://www.paypal.com/cgi-bin/webscr/?cmd=_s-xclick&hosted_button_id=X8EGYQNZ7VBPJ\">follow this link</A>
 }
 
 int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdLine, int nShowCmd)
